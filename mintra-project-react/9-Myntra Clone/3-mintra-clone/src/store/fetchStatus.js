@@ -5,18 +5,17 @@ const fetchStatusSlice =createSlice({
     name:"fetchStatus",
     initialState:{
         fetchDone:false,
-        currentlyFetching:false,
+        currentlyFetching:true,
     },
     reducers:{
         markFetchDone:(state,action)=>{
-
-            return state.fetchDone=true;
+             state.fetchDone=true;
         },
-        mardFetchingStarted:(state,action)=>{
-            return state.currentlyFetching=true;
+        markFetchingStarted:(state,action)=>{
+            state.currentlyFetching=true;
         },
         markFetchingFinished:(state,action)=>{
-            return state.currentlyFetching=false;
+            state.currentlyFetching=false;
         }
     }
 });

@@ -2,9 +2,12 @@ import React from 'react'
 import { IoPersonSharp } from "react-icons/io5";
 import { PiHeartFill } from "react-icons/pi";
 import { FaBagShopping } from "react-icons/fa6";
+import { useSelector } from 'react-redux'; 
 import { Link } from 'react-router-dom';
 
 function Header() {
+    const bag=useSelector(store=>store.bag)
+    console.log(bag)
   return (
     <header>
         <div className="logo_container">
@@ -36,7 +39,7 @@ function Header() {
             <Link className="action_container" to="/bag">
                 <FaBagShopping />
                 <span className="action_name">Bag</span>
-                <span className="bag-item-count">0</span>
+                <span className="bag-item-count">{bag.length}</span>
             </Link>
         </div>
     </header>
