@@ -1,0 +1,28 @@
+import { createSlice} from "@reduxjs/toolkit";
+// import { DEFAULT_ITEMS } from "../data/items";
+
+const fetchStatusSlice =createSlice({
+    name:"fetchStatus",
+    initialState:{
+        fetchDone:false,
+        currentlyFetching:false,
+    },
+    reducers:{
+        markFetchDone:(state,action)=>{
+
+            return state.fetchDone=true;
+        },
+        mardFetchingStarted:(state,action)=>{
+            return state.currentlyFetching=true;
+        },
+        markFetchingFinished:(state,action)=>{
+            return state.currentlyFetching=false;
+        }
+    }
+});
+
+
+
+export const fetchStatusActions =fetchStatusSlice.actions;
+
+export default fetchStatusSlice;
