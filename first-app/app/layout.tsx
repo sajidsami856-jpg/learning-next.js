@@ -1,10 +1,11 @@
 // import { Children } from "react";
+import Navigation from "../Components/Navigation";
 
 export default function RootLayout({children} : {children: React.ReactNode}){
   return (
     <html>
-      
-      <body><h1>hello layout</h1>
+      <body>
+        <Navigation/>
         {children}
       </body>
     </html>

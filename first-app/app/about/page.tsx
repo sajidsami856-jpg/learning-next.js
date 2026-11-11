@@ -1,9 +1,9 @@
 import React from 'react'
 
-function about() {
+function aboutl() {
   return (
     <div>page about</div>
   )
 }
 
-export default about;
+export default aboutl;
