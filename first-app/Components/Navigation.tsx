@@ -4,7 +4,7 @@ import  Link  from 'next/link';
 function Navigation() {
   return (
     <header>
-        <div className=''>Navigation</div>
+        <div className='font-roboto'>Navigation</div>
         <nav>
             <ul>
                 <li><Link href="/">Home</Link></li>

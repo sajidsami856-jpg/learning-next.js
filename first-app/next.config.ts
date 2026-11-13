@@ -8,12 +8,12 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
-    },
+    // rules: {
+    //   "*.css": {
+    //     loaders: ["@tailwindcss/turbopack"],
+    //     as: "*.css",
+    //   },
+    // },
   },
 };
 
